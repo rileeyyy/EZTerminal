@@ -16,9 +16,9 @@ exit or quit - quits
 additionally it comes with a (limited) BASIC interpreter! 
 simply type [filename].bas
 
-it comes with an example file, simply type:
+it comes with 2 example files, simply type:
 
 cd basic
-basic.bas
+basic.bas or variable.bas
 
 anyways, have fun! if you want to check for a new version, simply delete the EZTerminal folder and reinstall using setup.py
