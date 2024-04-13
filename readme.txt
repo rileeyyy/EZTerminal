@@ -8,6 +8,8 @@ simple use the following commands:
 cd [folder] - change directory
 cd .. - put the directory to the parent folder
 dir - shows the files
+md [name] - makes a folder
+mf [name[ makes a file
 exit or quit - quits
 
 additionally it comes with a (limitec) BASIC interpreter! 
