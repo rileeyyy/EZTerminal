@@ -15,10 +15,10 @@ def evaluate_equation(expression):
     except Exception as e:
         print(e)
 
+print("Welcome to EZTerminal Version 1.1!")
 def main():
     while True:
         current_path = os.getcwd()
-        print("Welcome to EZTerminal Version 1.1!")
         command = input(f"{current_path}> ")
         if command.lower() in ['exit', 'quit']:
             break
