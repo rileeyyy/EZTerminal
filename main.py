@@ -1,5 +1,6 @@
 from basic import BasicInterpreter
 import os
+import re
 
 def execute_basic_file(file_path):
     with open(file_path, 'r') as file:
@@ -7,9 +8,17 @@ def execute_basic_file(file_path):
         interpreter = BasicInterpreter()
         interpreter.interpret(basic_code)
 
+def evaluate_equation(expression):
+    try:
+        result = eval(expression)
+        print(result)
+    except Exception as e:
+        print(e)
+
 def main():
     while True:
         current_path = os.getcwd()
+        print("Welcome to EZTerminal Version 1.1!")
         command = input(f"{current_path}> ")
         if command.lower() in ['exit', 'quit']:
             break
@@ -35,6 +44,8 @@ def main():
                     print(f"File '{file_name}' created.")
             except FileExistsError:
                 print(f"File '{file_name}' already exists.")
+        elif re.match(r'^[\d+\-*/(). ]+$', command):
+            evaluate_equation(command)
         elif command.lower().endswith('.bas'):
             if os.path.isfile(command):
                 execute_basic_file(command)
