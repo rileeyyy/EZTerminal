@@ -21,6 +21,20 @@ def main():
                 print("Directory not found.")
         elif command.lower() == 'dir':
             print("\n".join(os.listdir()))
+        elif command.lower().startswith('md '):
+            folder_name = command[3:]
+            try:
+                os.mkdir(folder_name)
+                print(f"Folder '{folder_name}' created.")
+            except FileExistsError:
+                print(f"Folder '{folder_name}' already exists.")
+        elif command.lower().startswith('mf '):
+            file_name = command[3:]
+            try:
+                with open(file_name, 'x'):
+                    print(f"File '{file_name}' created.")
+            except FileExistsError:
+                print(f"File '{file_name}' already exists.")
         elif command.lower().endswith('.bas'):
             if os.path.isfile(command):
                 execute_basic_file(command)
