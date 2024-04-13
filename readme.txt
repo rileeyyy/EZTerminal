@@ -1,18 +1,19 @@
-Welcome to EZTerminal!
+Welcome to EZTerminal! v1.1
 a terminal project that i.. regually update
 
 to start run "main.py"
 youll see a command line with your path in it!
-simple use the following commands:
+simply use the following commands:
 
 cd [folder] - change directory
 cd .. - put the directory to the parent folder
 dir - shows the files
 md [name] - makes a folder
-mf [filename] makes a file
+mf [filename] - makes a file
+[any math equation] - does math
 exit or quit - quits
 
-additionally it comes with a (limitec) BASIC interpreter! 
+additionally it comes with a (limited) BASIC interpreter! 
 simply type [filename].bas
 
 it comes with an example file, simply type:
