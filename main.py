@@ -15,12 +15,18 @@ def evaluate_equation(expression):
     except Exception as e:
         print(e)
 
-print("Welcome to EZTerminal Version 1.1!")
+def print_welcome_message():
+    print("Welcome to EZTerminal Version 1.1!")
+
 def main():
+    print_welcome_message()
     while True:
         current_path = os.getcwd()
         command = input(f"{current_path}> ")
-        if command.lower() in ['exit', 'quit']:
+        if command.lower() == 'clr':
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print_welcome_message()
+        elif command.lower() in ['exit', 'quit']:
             break
         elif command.lower().startswith('cd '):
             try:
