@@ -28,8 +28,10 @@ def main():
             print_welcome_message()
         elif command.lower() in ['exit', 'quit']:
             break
+        elif command.lower().startswith('win '):
+            os.system(command[4:])
         elif command.lower().startswith('echo '):
-            print(command[4:])
+            print(command[5:])
         elif command.lower().startswith('cd '):
             try:
                 os.chdir(command[3:])
