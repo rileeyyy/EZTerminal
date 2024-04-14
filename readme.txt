@@ -11,6 +11,7 @@ dir - shows the files
 md [name] - makes a folder
 mf [filename] - makes a file
 [any math equation] - does math
+clr - clears the screen
 exit or quit - quits
 
 additionally it comes with a (limited) BASIC interpreter! 
