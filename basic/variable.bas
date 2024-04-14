@@ -1,2 +1,2 @@
-10 LET variable$ = "hi"
-20 PRINT variable$
+10 LET variable = 5
+20 PRINT variable
