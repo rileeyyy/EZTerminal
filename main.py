@@ -16,7 +16,7 @@ def evaluate_equation(expression):
         print(e)
 
 def print_welcome_message():
-    print("Welcome to EZTerminal Version 1.1!")
+    print("Welcome to EZTerminal Version 1.2!")
 
 def main():
     print_welcome_message()
@@ -28,6 +28,8 @@ def main():
             print_welcome_message()
         elif command.lower() in ['exit', 'quit']:
             break
+        elif command.lower().startswith('echo '):
+            print(command[4:])
         elif command.lower().startswith('cd '):
             try:
                 os.chdir(command[3:])
