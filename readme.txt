@@ -1,4 +1,4 @@
-Welcome to EZTerminal! v1.1
+Welcome to EZTerminal! v1.2
 a terminal project that i.. regually update
 
 to start run "main.py"
@@ -12,6 +12,7 @@ md [name] - makes a folder
 mf [filename] - makes a file
 [any math equation] - does math
 clr - clears the screen
+echo [string] - "echos" your text
 exit or quit - quits
 
 additionally it comes with a (limited) BASIC interpreter! 
