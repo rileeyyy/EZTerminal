@@ -1,4 +1,3 @@
-from basic import BasicInterpreter
 import os
 import re
 
