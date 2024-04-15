@@ -71,6 +71,11 @@ def main():
         if command.lower() == 'clr':
             os.system('cls' if os.name == 'nt' else 'clear')
             print_welcome_message()
+        elif command.lower() == 'hlp':
+            print('\n cd [folder] - change directory\n cd .. - put the directory to the parent folder\n dir - shows the files\n md [name] - makes a folder\n mf [filename] - makes a file\n [any math equation] - does math\n clr - clears the screen\n echo [string] - "echos" your text\n win [command] - executes your command via windows cmd (eg. title blahblah)\n hlp - displays this message\n if - ????\n exit or quit - quits\n')
+          
+        elif command.lower() == 'if':
+            print("if youd like to make a call, please hang up and try again, if you need help hang up and dial your ooperatorrrrr")
         elif command.lower() in ['exit', 'quit']:
             break
         elif command.lower().startswith('win '):
