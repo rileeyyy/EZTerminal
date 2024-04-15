@@ -14,6 +14,7 @@ mf [filename] - makes a file
 clr - clears the screen
 echo [string] - "echos" your text
 win [command] - executes your command via windows cmd (eg. title blahblah)
+hlp - the help command.
 exit or quit - quits
 
 additionally it comes with a (limited) BASIC interpreter! 
